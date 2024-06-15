@@ -22,3 +22,18 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+# Local Development
+
+## Build Docker image for local development
+
+```shell
+docker build -t rails:7.1.3 -f ./Dockerfile.development .
+```
+
+## Run docker container of this built image
+
+```shell
+docker run --rm -p 3000:3000 rails:7.1.3
+```
