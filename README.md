@@ -36,4 +36,7 @@ docker build -t rails:7.1.3 -f ./Dockerfile.development .
 
 ```shell
 docker run --rm -p 3000:3000 rails:7.1.3
+curl http://localhost:3000
 ```
+
+If you're using Chromium browsers, you may need accessing this running server with http://127.0.0.1:3000, not http://localhost:3000 because of Chromium browsers' HSTS policy.
